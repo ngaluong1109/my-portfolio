@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content = "Nga Luong">
+        <meta name = "keywords" content = "mediart213, html, css">
+        <meta name = "description" content = "HTML My Page">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link rel="stylesheet" href = "/css/style.css">
+        <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    </head>
+<body>
+
+    <header> 
+        <div id = "inline">
+            <div><h1 id="tessa">TESSA LUONG</h1></div>
+            <div><a href = "index.html"> Home </a> </div>
+            <!-- <div><a href = "project.html"> Projects </a> </div> -->
+            <div class="dropdown">
+                <p>Projects</p>
+    
+                <div class="projectcontent">
+                    <a href="ra.html">Resident Assistant</a>
+                    <a href="vela.html">VELA Academy</a>
+                    <a href="research.html">Research Assistant</a>   
+                </div>
+            </div>
+            <div><a href = "about.html"> Profile </a></div>
+            <div><a href = "contact.html"> Contact </a></div>
+        </div>
+    </header>
+
+    <main> 
+
+    <div class = "contact">
+            <div class = "work">
+                <h2>My Working Hours</h2>
+                <table>
+                    <!-- first row -->
+                        <tr>
+                            <th>Sunday</th> 
+                            <th>Monday</th>   
+                            <th>Tuesday</th> 
+                            <th>Wednesday</th> 
+                            <th>Thursday</th> 
+                            <th>Friday</th> 
+                            <th>Saturday</th> 
+                        </tr>
+                    <!-- second row -->
+
+                        <tr> 
+                            <td>Rest</td> 
+                            <td>9am - 5pm</td>   
+                            <td>9am - 5pm</td> 
+                            <td>9am - 5pm</td> 
+                            <td>9am - 5pm</td> 
+                            <td>9am - 5pm</td> 
+                            <td>Rest</td> 
+                        </tr>
+                </table>
+            </div>
+            <br>
+
+            <div class = "touch">
+                <h2><b>Let's get in touch!</b></h2>
+                <br>
+                <form>
+                    <div>
+                        <label for = "fname"> First Name: </label>
+                        <input type ="text" id = "fname" name ="fname" placeholder = "input your first name..." required>
+                    </div>
+
+                    <div>
+                        <label for = "lname"> Last Name: </label>
+                        <input type ="text" id = "lname" name ="lname" placeholder = "input your last name..." required>
+                    </div>
+                    <div>
+                        <label for ="email">Email:</label>
+                        <input type ="email" id ="email" name ="email" required>
+                    </div>
+
+                    <div>
+                        <label for = "phone">Phone No.:</label>
+                        <input type = "tel" id = "phone" name ="phone" placeholder = "your phone number...">
+                    </div>
+
+                    <div>
+                        <label for = "bdate">DOB:</label>
+                        <input type = "date" id = "bdate" name ="bdate">
+                    </div>
+
+                    <div>
+                        <label for="title">Your title:</label>
+                        <select id ="title" name = "title">
+                            <option value = "Mr.">Mr.</option>
+                            <option value ="Ms">Ms</option>
+                            <option value = "Mrs">Mrs</option>
+                            <option value = "Dr."> Dr.</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div id = "reset">
+                        <input type ="reset">
+                    </div>
+
+                    <div id = "submit">
+                        <input type = "submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <br>
+<hr>
+    <footer>
+        &copy; 2023 by Nga Luong
+        <a id = "mail" href="mailto: npl10@duke.edu">Email</a> 
+        <i class="fa fa-envelope"></i>
+    </footer>
+   
+   
+</body>
+</html>

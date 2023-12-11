@@ -147,10 +147,10 @@ h3::first-letter{
     height: 80%;
 }
 
-.event-dis::selection{
-    /* color: #007700; */
+/* .event-dis::selection{
+    color: #007700;
     background-color: black;
-}
+} */
 
 .ra-dis{
     margin-top: 0px;

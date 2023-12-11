@@ -12,8 +12,9 @@
     font-family:Audrey-Normal;
 }
 html {
-    background-color: #f7f2ed;
-    color: #241f19;
+    background-color: #f2f2f2;
+    color: #0c0c0c;
+    font-family:Audrey-Normal; 
 }
 
 /* *{
@@ -26,14 +27,14 @@ header{
     position: sticky;
     top:0;
     left:0;
-    background-color: #f7f2ed;
+    background-color: #f2f2f2;;
 }
 
 .dropdown .projectcontent{
     box-shadow: 2px 2px 5px rgb(33, 33, 33); 
     display: none;
     position: absolute;
-    background-color: #f7f2ed;
+    background-color: #f2f2f2;
     padding: 5px 10px;
     border-radius: 10px;
 }
@@ -43,7 +44,7 @@ header{
 } 
 
 .dropdown:hover p{
-    color:#be8f6e;
+    color:#889A68;
     font-size: 1.1em;
     /* text-decoration: underline; */
     cursor:pointer;
@@ -63,7 +64,7 @@ header{
 .dropdown a:hover{
     color: #f7f2ed;
     font-size: 1.1em;
-    background-color: #be8f6e;
+    background-color: #889A68;
     border-radius: 15px;
     padding: 8px 8px;
 }
@@ -71,6 +72,7 @@ header{
 #tessa{
     font-size: 50px;
     margin-right: 375px;
+    color: #545F57;
 }
 
 #inline>div
@@ -83,10 +85,9 @@ header{
 }
 
 a:hover{    
-    color:#be8f6e;
+    color:#889A68;
     font-size: 1.1em;
     text-decoration: underline;
-    /* font-siz: 1.1em; */
 }
 
 a:visited { text-decoration: none;} 
@@ -98,7 +99,7 @@ a:link {
 a:active { 
     text-decoration: underline;
     color: #241f19;
-    background-color: #be8f6e;
+    background-color: #889A68;
     border-radius: 15%;
     padding: 5% 5% 5% 5%;
 }

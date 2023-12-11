@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content = "Nga Luong">
+        <meta name = "keywords" content = "mediart213, html, css">
+        <meta name = "description" content = "HTML My Page">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RA</title>
+        <link rel="stylesheet" href = "./css/style3.css">
+        <!-- <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Roboto:wght@100&display=swap" rel="stylesheet"> -->
+    </head>
+</head>
+<body>
+    <header> 
+        <div class = "inline">
+            <div><a href = "index.html"><h1 id="tessa" >TESSA LUONG</h1></a></div>
+            <div><a href = "index.html"> Home </a> </div>
+            <div class="dropdown">
+                <p>Projects</p>
+    
+                <div class="projectcontent">
+                    <a href="ra1.html">Resident Assistant</a>
+                    <a href="vela.html">VELA Academy</a>
+                    <a href="research.html">Research Assistant</a>   
+                </div>
+            </div>
+            <div><a href = "about.html"> Profile </a></div>
+            <div><a href = "contact.html"> Contact </a></div>
+        </div>
+    </header>
+    <main class="main-content">
+
+        <h2 id = "RA"> Resident Assistant for DKU Residence life</h2>
+            <p id= "h3p">As a Resident Assistant, I create various events and contribute to the fun and exciting student life in DKU.</p>
+
+        <div class ="background-grid">
+            <div class = "grid-container">
+
+                <div class="project-box" data-target="overlay1" data-photo-urls='["./img/shopping1.jpg", "./img/shopping2.jpg", "./img/pot1.jpg"]' data-title="Project 1" data-description="Details for Project 1" id="shopping"onclick="openOverlay('shopping')">
+                    <img src="./img/shopping1.jpg" alt="Selected Project">
+                    <div class="hover-text">Grocery Shopping</div>
+                </div>
+
+                <div class= "project-box" id = "horror-movie" onclick="openOverlay('horror-movie')">
+                    <img id="project-image-horror" src="./img/horror1.jpg" alt="Selected Project">
+                    <div class="hover-text">Horror Movie Night</div>
+                </div>
+
+                <div class= "project-box" id = "pot" onclick="openOverlay('pot')">
+                    <img id="project-image-pot" src="./img/pot1.jpg" alt="Selected Project">
+                    <div class="hover-text">Plant Pot Painting</div>
+                </div>
+                <div class= "project-box" id = "midautumn" onclick="openOverlay('midautumn')">
+                    <img id="project-image-pot" src="./img/shopping2.jpg" alt="Selected Project">
+                    <div class="hover-text">Mid Autumn Festival</div>
+                </div>
+                <div class= "project-box" id = "tea" onclick="openOverlay('tea')">
+                    <img id="project-image-pot" src="./img/pot2.jpg" alt="Selected Project">
+                    <div class="hover-text">Craft Your Tea</div>
+                </div>
+                <div class= "project-box" id = "xmas" onclick="openOverlay('xmas')">
+                    <img id="project-image-pot" src="./img/horror2.png" alt="Selected Project">
+                    <div class="hover-text">Wrap&Send Holiday Gifts</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="overlay">
+            <div class="details-container">
+                <div class ="close-btn" id="closeOverlay">x</div>
+
+                <div class="photo-container">
+                    <div class="arrow left-arrow" onclick="changePhoto(-1)">&#10094;</div>
+                    <img src="./img/639213A0-1C05-4B41-82A0-4D1C408AB4AF.JPG" alt="Selected Photo" id="selectedPhoto">
+                    <div class="arrow right-arrow" onclick="changePhoto(1)">&#10095;</div>
+                </div>
+
+                <div class="text-container">
+                    <h2 id="projectTitle">This is my project</h2>
+                    <p>Project details go here... Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam facere ducimus blanditiis deserunt perspiciatis earum voluptatibus exercitationem modi laboriosam! Excepturi vero molestias aspernatur perspiciatis quae totam praesentium, sed blanditiis fuga?</p>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="overlay" id="overlay1">
+            <div class="details-container">
+                <div class="close-btn" id="closeOverlay">x</div>
+
+                <div class="photo-container">
+                    <div class="arrow left-arrow" id="leftArrow">&#10094;</div>
+                    <img src="./img/639213A0-1C05-4B41-82A0-4D1C408AB4AF.JPG" alt="Selected Project" id="selectedPhoto">
+                    <div class="arrow right-arrow" id="rightArrow">&#10095;</div>
+                </div>
+
+                <div class="text-container">
+                    <h2 id="projectTitle">This is my project</h2>
+                    <p>Project details go here... Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam facere ducimus blanditiis deserunt perspiciatis earum voluptatibus exercitationem modi laboriosam! Excepturi vero molestias aspernatur perspiciatis quae totam praesentium, sed blanditiis fuga?</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="java.js"></script>
+</body>
+</html>

@@ -16,3 +16,17 @@ function navigateToTea() {
 function navigateToXmas() {
     window.location.href = 'xmas.html';
 }
+
+function validateForm() {
+    var fname = document.getElementById("fname").value;
+    var lname = document.getElementById("lname").value;
+    var email = document.getElementById("email").value;
+
+    if (fname === "" || lname === "" || email === "") {
+        alert("Please fill in all required fields.");
+        return false;
+    }
+
+    alert("Form submitted successfully!");
+    return true;
+}

@@ -22,21 +22,23 @@ header{
     position: sticky;
     top:0;
     left:0;
-    background-color: #f7f2ed;
+    background-color: #f2f2f2;
+    z-index: 2;
 }
 
-#inline>div
+.inline>div
 {
     display: inline-block;
     margin-inline: 8px;
-    font-size: 20px
+    font-size: 20px;
+    margin-top: 2px;
 }
 
 .dropdown .projectcontent{
     box-shadow: 2px 2px 5px rgb(33, 33, 33); 
     display: none;
     position: absolute;
-    background-color: #f7f2ed;
+    background-color: #ededed;
     padding: 5px 10px;
     border-radius: 10px;
 }
@@ -47,9 +49,13 @@ header{
 } 
 
 .dropdown:hover p{
-    color:#be8f6e;
+    color:#889A68;
     font-size: 1.1em;
     cursor:pointer;
+}
+
+.dropdown p{
+    transition: color 0.3s, font-size 0.3s, border-radius 0.3s;
 }
 .dropdown{
     display:inline-block;
@@ -58,7 +64,7 @@ header{
 .dropdown a{
     text-decoration: none;
     display: block;
-    color: #241f19;
+    color: #0c0c0c;
     padding: 5px 10px;
     border-radius: 15px;
     /* position: absolute; */
@@ -67,35 +73,45 @@ header{
 .dropdown a:hover{
     color: #f7f2ed;
     font-size: 1.1em;
-    background-color: #be8f6e;
+    background-color: #889A68;
     border-radius: 15px;
     padding: 8px 8px;
 }
 
-#tessa{
+#tessa {
     font-size: 50px;
     margin-right: 375px;
+    color: #545F57;
+    transition: color 0.3s;
+}
+/* #tessa a:hover {
+    text-decoration: none; 
+} */
+a {
+    color: #0c0c0c;
+    /* text-decoration: none; */
+    transition: color 0.3s, font-size 0.3s, border-radius 0.3s;
 }
 
-a:hover{    
-    color:#be8f6e;
+body a:hover{    
+    color:#889A68;
     font-size: 1.1em;
-    text-decoration: underline;
-    border-radius: 15px;
-    /* font-siz: 1.1em; */
-}
+    /* border-radius: 20px; */
+} 
 
-a:visited { text-decoration: none;} 
 a:link {
-    color:#241f19;
+    color:#0c0c0c;
     text-decoration: none;
 }
+a:visited { 
+    color:#0c0c0c;
+    text-decoration: none;
+} 
 
 a:active { 
-    text-decoration: underline;
-    color: #241f19;
-    background-color: #be8f6e;
-    border-radius: 15%;
+    color: #0c0c0c;
+    background-color: #889A68;
+    border-radius: 10px;
     padding: 5% 5% 5% 5%;
 }
 #mail {

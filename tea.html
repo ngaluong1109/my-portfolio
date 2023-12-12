@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea</title>
+    <link rel="stylesheet" href = "./css/styleraproject.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <div class="overlay">
+        <div class = "close"><a href="ra.html">x</a></div>
+
+        <div class="details-container">
+            <div class="photo-container"> 
+                <div class="arrow left-arrow" onclick="changePhoto(-1)">&#10094;</div>
+                <img src="./img/tea/tea1.jpeg"  alt=" Photos" id="selectedPhoto">
+                <div class="arrow right-arrow" onclick="changePhoto(1)">&#10095;</div>
+            </div>
+
+            <div class="text-container">
+                <h2 id="projectTitle">Craft Your Signature Tea</h2>
+                <p>
+                    Participants engage in creative expression through crafting unique teas and social interaction through the game of Pictionary. They explore different cultures, flavors, and sensory experiences, while also enhancing their communication, teamwork, and problem-solving skills. The event combines fun and learning, allowing individuals to live in the moment, connect with others, and acquire new knowledge and skills.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./ra-js/teajava.js" ></script>
+    
+</body>
+</html>

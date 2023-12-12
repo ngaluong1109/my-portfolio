@@ -41,16 +41,20 @@ header{
 
 .dropdown:hover .projectcontent{
     display: block;
+    border-radius: 15px;
 } 
 
 .dropdown:hover p{
     color:#889A68;
     font-size: 1.1em;
-    /* text-decoration: underline; */
     cursor:pointer;
+}
+.dropdown p{
+    transition: color 0.3s, font-size 0.3s, border-radius 0.3s;
 }
 .dropdown{
     display:inline-block;
+    border-radius: 15px;
 }
 
 .dropdown a{
@@ -58,6 +62,7 @@ header{
     display: block;
     color: #241f19;
     padding: 5px 10px;
+    border-radius: 15px;
     /* position: absolute; */
 }
 
@@ -73,31 +78,38 @@ header{
     font-size: 50px;
     margin-right: 375px;
     color: #545F57;
+    transition: color 0.3s;
 }
 
 #inline>div
 {
     display: inline-block;
-    /* text-decoration: none;
-    color: #241f19; */
     margin-inline: 8px;
-    font-size: 20px
+    font-size: 20px;
+    margin-top: 2px;
 }
 
-a:hover{    
+a {
+    color: #0c0c0c;
+    /* text-decoration: none; */
+    transition: color 0.3s, font-size 0.3s, border-radius 0.3s;
+}
+
+body a:hover{    
     color:#889A68;
     font-size: 1.1em;
-    text-decoration: underline;
 }
 
-a:visited { text-decoration: none;} 
+a:visited { 
+    color:#0c0c0c;
+    text-decoration: none;
+} 
 a:link {
     color:#241f19;
     text-decoration: none;
 }
 
 a:active { 
-    text-decoration: underline;
     color: #241f19;
     background-color: #889A68;
     border-radius: 15%;
@@ -167,6 +179,7 @@ footer{
     /* align-items: center; */
     font-family:Audrey-Normal; 
     font-size: 20px;
+    color: #545F57;
     /* border: 2px solid; */
 }
 
@@ -179,7 +192,7 @@ footer{
     flex: 1;
     /* text-align: center; */
     font-size: 19px;
-    margin-left: 100px;
+    margin-left: 2vw;
 }
 
 #bio p{
@@ -192,7 +205,7 @@ footer{
 }
 
 form{
-    background-color: #e7d7c9;
+    background-color: #8d9f62;
     padding: 20px;
     border-radius: 20px;
 }
@@ -207,43 +220,43 @@ select{
 }
     
 th {
-    background-color: #87816e;
-    color: #e7d7c9;
+    background-color: #889A68;
+    color: #0c0c0c;
 }
 
 tr{ 
-    background-color: #e7d7c9;
-    color: #241f19;
+    background-color:#e7d7c9;
+    color: #545F57;
     text-align: center;
 }
 
 #reset{
     float: left;
     font-family:Agbalumo-Regular;
-    color: #87816e;
+    color: #889A68;
 }
 
 #submit{
     float:right;
     font-family:Agbalumo-Regular;
-    color: #87816e;
+    color: #889A68
 }
 
 #bdate{
     /* float:right; */
     font-family:Agbalumo-Regular;
-    color: #87816e;
+    color: #545F57;
     margin-left: 67px;
 }
 
 #email{
     /* float:right; */
-    color: #87816e;
+    /* color: #87816e; */
     margin-left: 32px;
 }
 
 #phone{
-    color: #87816e;
+    /* color: #87816e; */
     margin-left: 2px;
 }
 
